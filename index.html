@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prove Generator</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <link rel="stylesheet" type="text/css" href="mainStyle.css">
+        <script src="prove.js"></script>
+    </head>
+    <body>
+        <div id="main">
+            <div id="title">野獸先輩生成器</div>
+            <div id="Prove">
+                <span>論證</span>
+                <input placeholder="(迫害對象)"></input>
+                <br>
+                <span>性别:</span>
+                <select name="i_gender">
+                    <option value="男">男</option>
+                    <option value="女">女</option>
+                    <option value="不确定">不确定</option>
+                </select>
+                <br>
+                <button onclick="proveArtical()">生成</button>
+            </div>
+            <div id="artical"></div>
+        </div>
+    </body>
+</html>
