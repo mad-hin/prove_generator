@@ -12,7 +12,11 @@ let yajuu = {
 }
 
 function numProve(s, dic, object) {
-    if (s !== 24) {
+    console.log(s == 24)
+    if (s == 24) {
+        var t = object + "年齡是" + s + "而野獸先輩是24歲"
+        return t
+    } else {
         var t = object + "年齡是" + s + "而" + s + " = "
         while (s >= 10) {
             digi = Math.floor(Math.log10(s))
@@ -21,8 +25,6 @@ function numProve(s, dic, object) {
             s -= s - tmp
         }
         return (t + dic[s])
-    } else {
-        var t = object + "年齡是" + s + "而野獸先輩是24歲"
     }
 }
 
